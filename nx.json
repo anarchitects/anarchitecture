@@ -1,16 +1,34 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "production": [
-      "default"
-    ],
-    "sharedGlobals": [
-      "{workspaceRoot}/.github/workflows/ci.yml"
-    ]
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": ["default"],
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "683edca4f74cfb650494035a"
+  "nxCloudId": "683edca4f74cfb650494035a",
+  "release": {
+    "version": {
+      "conventionalCommits": true
+    },
+    "projectsRelationship": "independent",
+    "changelog": {
+      "projectChangelogs": {
+        "file": false,
+        "createRelease": "github"
+      }
+    },
+    "conventionalCommits": {
+      "types": {
+        "init": {
+          "semverBump": "none"
+        },
+        "chore": {
+          "semverBump": "none"
+        },
+        "docs": {
+          "semverBump": "none"
+        }
+      }
+    }
+  }
 }
