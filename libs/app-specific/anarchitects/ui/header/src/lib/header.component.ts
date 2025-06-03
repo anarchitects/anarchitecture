@@ -8,4 +8,4 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class AnarchitectsUiHeaderComponent {}
+export class AnarchitectsUiHeaderComponent {}
