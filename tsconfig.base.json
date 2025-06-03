@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@anarchitecture/anarchitects-storybook": [
+        "libs/app-specific/anarchitects/storybook/src/index.ts"
+      ],
       "@anarchitecture/anarchitects-ui-header": [
         "libs/app-specific/anarchitects/ui/header/src/index.ts"
       ],
