@@ -17,6 +17,9 @@
     "paths": {
       "@anarchitecture/anarchitects-ui-header": [
         "libs/app-specific/anarchitects/ui/header/src/index.ts"
+      ],
+      "@anarchitecture/anarchitects-ui-hero": [
+        "libs/app-specific/anarchitects/ui/hero/src/index.ts"
       ]
     }
   },

@@ -1,0 +1,36 @@
+{
+  "name": "anarchitects-ui-hero",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/app-specific/anarchitects/ui/hero/src",
+  "prefix": "anarchitects",
+  "projectType": "library",
+  "tags": ["scope:app-specific", "type:ui", "app:anarchitects"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/app-specific/anarchitects/ui/hero/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/app-specific/anarchitects/ui/hero/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/app-specific/anarchitects/ui/hero/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../../../../coverage/libs/app-specific/anarchitects/ui/hero"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
