@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import AnarchitectsUiHeaderComponent from './header.component';
+import { AnarchitectsUiHeaderComponent } from './header.component';
 import { provideRouter } from '@angular/router';
 
 describe('AnarchitectsUiHeaderComponent', () => {
