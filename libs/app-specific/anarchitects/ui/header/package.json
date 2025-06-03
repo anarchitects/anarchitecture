@@ -2,8 +2,12 @@
   "name": "@anarchitecture/anarchitects-ui-header",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/core": "^19.2.0",
+    "@angular/router": "~19.2.0",
+    "@nx/angular": "21.1.2",
+    "vite": "^6.0.0",
+    "@analogjs/vite-plugin-angular": "~1.14.1",
+    "@nx/vite": "21.1.2"
   },
   "sideEffects": false
 }
