@@ -32,22 +32,70 @@
 .hero-content {
   position: relative;
   z-index: 3;
-  color: #fff;
-  text-align: center;
+  color: rgb(128, 130, 133);
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2rem;
+}
+
+.hero-content-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-content-logo {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.hero-content-text {
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .hero-content-col,
+  .hero-content-text {
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-logo {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-tagline {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-cta {

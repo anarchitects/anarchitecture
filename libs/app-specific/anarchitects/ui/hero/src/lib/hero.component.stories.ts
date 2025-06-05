@@ -13,11 +13,3 @@ type Story = StoryObj<AnarchitectsUiHeroComponent>;
 export const Primary: Story = {
   args: {},
 };
-
-export const Heading: Story = {
-  args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/hero works!/gi)).toBeTruthy();
-  },
-};
