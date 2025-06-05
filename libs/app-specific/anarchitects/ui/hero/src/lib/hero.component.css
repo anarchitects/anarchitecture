@@ -42,7 +42,7 @@
   max-width: 900px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.85);
-  border-radius: 2rem;;
+  border-radius: 2rem;
 }
 
 .hero-content-col {
@@ -63,7 +63,7 @@
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .hero-content-text {

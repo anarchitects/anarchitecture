@@ -13,4 +13,3 @@ type Story = StoryObj<AnarchitectsUiHeroComponent>;
 export const Primary: Story = {
   args: {},
 };
-
