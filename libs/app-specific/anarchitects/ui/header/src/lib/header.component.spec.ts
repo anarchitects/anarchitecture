@@ -41,7 +41,7 @@ describe('AnarchitectsUiHeaderComponent', () => {
       { link: '/contact', text: 'Contact' },
     ];
     expected.forEach((exp, i) => {
-      expect(links[i].getAttribute('ng-reflect-router-link')).toBe(exp.link);
+      expect(links[i].getAttribute('routerLink')).toBe(exp.link);
       expect(links[i].textContent.trim()).toBe(exp.text);
     });
   });
