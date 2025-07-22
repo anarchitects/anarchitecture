@@ -1,0 +1,7 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/style/tailwind/preset",
+  "targets": {},
+  "tags": [],
+  "name": "style-tailwind-preset"
+}
